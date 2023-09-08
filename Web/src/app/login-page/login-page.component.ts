@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
+  isModalOpen: boolean = false; // Rename this to isOpen
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  openModal() {
+    this.isModalOpen = true; // Rename this to isOpen
   }
 
 }

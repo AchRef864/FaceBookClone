@@ -1,0 +1,65 @@
+<div class="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50" *ngIf="isOpen">
+    <div class="bg-white shadow-md rounded p-8 max-w-md">
+        <div>
+            <p class="text-4xl font-semibold">Sign up</p>
+            <p class="text-gray-600">It's quick and easy.</p>
+        </div>
+        <br>
+        <hr class="mb-4">
+        <form>
+            <div class="grid gap-6 mb-3 md:grid-cols-2">
+                <div>
+                    <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="John" required>
+                </div>
+                <div>
+                    <input type="text" id="last_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Doe" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="john.doe@company.com" required>
+            </div>
+            <div class="mb-3"><input type="password" id="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="•••••••••" required>
+            </div>
+            <div class="flex items-start mb-6">
+                <div class="flex items-center h-5">
+                    <div class="text-gray-800 font-semibold">
+                        <p class="text-xs">People who use our service may have uploaded your contact information to
+                            Facebook.
+                            <a href="https://www.facebook.com/help/637205020878504" class="text-blue-900">Learn
+                                more</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start mb-10">
+                <div class="flex items-center h-5">
+                    <div class="text-gray-800 font-semibold">
+                        <p class="text-xs">By clicking Sign Up, you agree to our
+                            <a href="https://www.facebook.com/legal/terms/update" class="text-blue-900">Terms</a>,
+                            <a href="https://www.facebook.com/about/privacy/update" class="text-blue-900">Privacy
+                                Polic</a> and
+                            <a href="https://www.facebook.com/policies/cookies/" class="text-blue-900">Cookies
+                                Policy</a>. <br>
+                            You may receive SMS Notifications from us and can opt out any time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start mb-3">
+                <div class="flex items-center h-5">
+                    <button
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-2 rounded focus:outline-none focus:shadow-outline"
+                        (click)="closeModal()">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

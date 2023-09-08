@@ -1,0 +1,9 @@
+.bg-green-500 {
+    background-color: #42B72A;
+    /* Adjust the color as needed */
+}
+
+.hover\:bg-green-600:hover {
+    background-color: #359E1D;
+    /* Adjust the color as needed */
+}
